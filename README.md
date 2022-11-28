@@ -113,6 +113,23 @@ tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base")
 model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base")
 ```
 
+## Mengzi-T5-MT
+```python
+# 使用 Huggingface transformers 加载
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+
+tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base-mt")
+model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base-mt")
+```
+或者
+```python
+# 使用 PaddleNLP 加载
+from paddlenlp.transformers import T5Tokenizer, T5ForConditionalGeneration
+
+tokenizer = T5Tokenizer.from_pretrained("Langboat/mengzi-t5-base-mt")
+model = T5ForConditionalGeneration.from_pretrained("Langboat/mengzi-t5-base-mt")
+```
+
 ## Mengzi-Oscar
 [参考文档](./Mengzi-Oscar.md)
 
